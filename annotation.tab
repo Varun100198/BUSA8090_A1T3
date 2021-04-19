@@ -1,0 +1,5 @@
+$ sudo su
+
+# Then run mysql command with -e option to run a specific command
+$ mysql -u root compbiol -e "SELECT * FROM annotation" > annotation.tab
+
