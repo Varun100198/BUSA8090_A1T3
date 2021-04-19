@@ -1,0 +1,4 @@
+SELECT DISTINCT m.LastName, m.FirstName, m.MemberId
+FROM Member m INNER JOIN
+Entry e ON e.MemberId = m.MemberId
+AND Year != 2013;
