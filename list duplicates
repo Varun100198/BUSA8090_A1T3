@@ -1,0 +1,4 @@
+$ sudo su
+
+# Then run mysql command with -e option to run a specific command
+$ mysql -u root compbiol -e "SELECT annotation.gene,function_1,expr_value,metabolism FROM annotation INNER JOIN expression ON annotation.gene = expression.gene" > output3.tab
